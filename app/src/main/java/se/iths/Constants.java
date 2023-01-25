@@ -9,7 +9,7 @@ public class Constants {
     public static final String SQL_COL_ARTIST_ID = "ArtistId";
     public static final String SQL_COL_ARTIST_NAME = "Name";
 
-    public static final String SQL_SELECT_ALBUM_FOR_ARTISTS = "SELECT Name, Title FROM Artist JOIN Album USING (ArtistId) WHERE ArtistId = ?";
+    public static final String SQL_SELECT_ALBUM_FOR_ARTISTS = "SELECT ArtistId, AlbumId, Name, Title FROM Artist JOIN Album USING (ArtistId) WHERE ArtistId = ?";
 
     public static final String SQL_COL_ALBUM_ID = "AlbumId";
 
